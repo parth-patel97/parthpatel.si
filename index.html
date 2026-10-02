@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parth Patel · Technical Lead AI</title>
+  <meta name="description" content="Parth Patel builds production AI agents: RAG pipelines, multi-agent orchestration, MCP servers, tracing and evals.">
+  <meta property="og:title" content="Parth Patel · I build AI agents that survive production">
+  <meta property="og:description" content="RAG pipelines, multi-agent orchestration, MCP servers, and the evals that keep them honest.">
+  <meta property="og:url" content="https://parthpatel.si">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="#top" class="brand"><span class="dot"></span>Parth Patel</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#oss">Open source</a>
+      <a href="#journey">Journey</a>
+      <a href="#ask">Ask the agent</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="top" class="wrap hero">
+    <div class="mono trace-meta">
+      <span>trace: parth.patel</span>
+      <span>span: introduction</span>
+      <span class="signal">status: running</span>
+    </div>
+    <h1>I build AI agents that <em>survive</em> production.</h1>
+    <p class="lede">Technical Lead AI at atQor. Around six years shipping ML and AI systems: RAG pipelines, multi-agent orchestration, MCP servers, and the tracing and evals that keep them honest after launch.</p>
+    <div class="ctas">
+      <a href="#work" class="btn btn-primary">See the work</a>
+      <a href="#ask" class="btn">Ask my portfolio agent →</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>~6 yrs</strong><span>shipping ML and AI systems</span></div>
+      <div class="stat"><strong>[N]</strong><span>agents in production</span></div>
+      <div class="stat"><strong>10K+</strong><span>engineers following the build on LinkedIn</span></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2 class="section-label">WHAT I DO</h2>
+    <div class="grid grid-4">
+      <div class="card"><code class="accent">retrieve()</code><h3>RAG pipelines</h3><p>Retrieval that stays grounded: chunking, hybrid search, reranking, and answers you can trace back to a source.</p></div>
+      <div class="card"><code class="accent">handoff()</code><h3>Multi-agent orchestration</h3><p>Agent teams on Claude Agent SDK and OpenAI Agents SDK, with clear roles, handoffs and guardrails.</p></div>
+      <div class="card"><code class="accent">tools/list</code><h3>MCP servers and tooling</h3><p>Model Context Protocol servers that give agents safe, typed access to real systems and data.</p></div>
+      <div class="card"><code class="signal">judge.score()</code><h3>Evals and observability</h3><p>Langfuse tracing and LLM-as-judge evals, so quality is measured, not guessed.</p></div>
+    </div>
+  </section>
+
+  <section id="work" class="wrap">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <span class="mono">3 case studies · problem → architecture → outcome</span>
+    </div>
+    <div class="grid grid-3">
+      <article class="case">
+        <div class="case-figure mono">[architecture diagram]</div>
+        <div class="case-body">
+          <span class="case-num">01</span>
+          <h3>Production agent with MCP tools</h3>
+          <p>[One line on the problem.] Agent built on Claude Agent SDK, connected to internal systems through MCP servers, traced end to end in Langfuse.</p>
+          <div class="chips"><span>Claude Agent SDK</span><span>MCP</span><span>Langfuse</span></div>
+          <div class="case-result"><span class="signal">[metric]</span><span>[outcome]</span></div>
+        </div>
+      </article>
+      <article class="case">
+        <div class="case-figure mono">[architecture diagram]</div>
+        <div class="case-body">
+          <span class="case-num">02</span>
+          <h3>Enterprise RAG pipeline</h3>
+          <p>[One line on the problem.] Grounded question answering over [document set], with retrieval quality scored on every release.</p>
+          <div class="chips"><span>Azure</span><span>[vector store]</span><span>LLM-as-judge</span></div>
+          <div class="case-result"><span class="signal">[metric]</span><span>[outcome]</span></div>
+        </div>
+      </article>
+      <article class="case">
+        <div class="case-figure mono">[architecture diagram]</div>
+        <div class="case-body">
+          <span class="case-num">03</span>
+          <h3>Multi-agent orchestration</h3>
+          <p>[One line on the problem.] A team of specialised agents on OpenAI Agents SDK with handoffs, guardrails and an eval suite gating each change.</p>
+          <div class="chips"><span>OpenAI Agents SDK</span><span>Langfuse</span><span>Evals</span></div>
+          <div class="case-result"><span class="signal">[metric]</span><span>[outcome]</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="oss" class="wrap">
+    <div class="section-head"><h2>Open source</h2></div>
+    <div class="grid grid-oss">
+      <a class="oss" href="https://github.com/[username]/pdf-mcp-rs">
+        <div class="oss-top"><span class="oss-name">pdf-mcp-rs</span><span class="mono">★ [N]</span></div>
+        <span class="oss-desc">MCP server for PDFs, written in Rust. [one-line description]</span>
+        <span class="mono signal">Rust</span>
+      </a>
+      <a class="oss" href="https://github.com/[username]/[langfuse-mcp-repo]">
+        <div class="oss-top"><span class="oss-name">Langfuse MCP server</span><span class="mono">★ [N]</span></div>
+        <span class="oss-desc">MCP server for Langfuse. [one-line description]</span>
+        <span class="mono signal">[language]</span>
+      </a>
+      <a class="oss" href="[corsair-link]">
+        <div class="oss-top"><span class="oss-name">Corsair</span><span class="mono">contributor</span></div>
+        <span class="oss-desc">[What you contributed.]</span>
+        <span class="mono signal">[language]</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="journey" class="wrap">
+    <div class="section-head">
+      <h2>Journey</h2>
+      <span class="mono">career as a trace · 2021 → now</span>
+    </div>
+    <div class="trace">
+      <!-- Edit --start and --len (percent of 2021 → now) to match real dates -->
+      <div class="span"><div class="span-label"><strong>Saubhagyam Web</strong><span>[Role] · 2021–[YYYY]</span></div><div class="span-track"><div class="span-bar" style="--start:0%;--len:16%"></div></div></div>
+      <div class="span"><div class="span-label"><strong>Brilworks</strong><span>[Role] · [YYYY–YYYY]</span></div><div class="span-track"><div class="span-bar" style="--start:16%;--len:16%"></div></div></div>
+      <div class="span"><div class="span-label"><strong>Rao IT</strong><span>[Role] · [YYYY–YYYY]</span></div><div class="span-track"><div class="span-bar" style="--start:32%;--len:16%"></div></div></div>
+      <div class="span"><div class="span-label"><strong>fxis.ai</strong><span>[Role] · [YYYY–YYYY]</span></div><div class="span-track"><div class="span-bar" style="--start:48%;--len:16%"></div></div></div>
+      <div class="span"><div class="span-label"><strong>ProductSquads</strong><span>[Role] · [YYYY–YYYY]</span></div><div class="span-track"><div class="span-bar" style="--start:64%;--len:16%"></div></div></div>
+      <div class="span"><div class="span-label"><strong>atQor</strong><span>Senior AI Engineer · [YYYY]–2026</span></div><div class="span-track"><div class="span-bar prev" style="--start:80%;--len:14%"></div></div></div>
+      <div class="span"><div class="span-label"><strong>atQor</strong><span class="signal">Technical Lead AI · Sep 2026 → running</span></div><div class="span-track"><div class="span-bar live" style="--start:94%;--len:6%"></div></div></div>
+    </div>
+  </section>
+
+  <section id="ask" class="wrap">
+    <div class="ask-intro">
+      <h2>Ask my portfolio <em>agent</em></h2>
+      <p>A small RAG agent over my case studies, with its trace shown live.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="chat">
+        <div class="msg-user">What has Parth shipped with MCP?</div>
+        <div class="msg-bot">[Grounded answer drawn from the case studies, with source links.]</div>
+        <form class="ask-form" onsubmit="return false">
+          <label for="ask-input" class="sr-only">Ask a question</label>
+          <input id="ask-input" type="text" placeholder="Ask about my work…">
+          <button type="submit">Ask</button>
+        </form>
+      </div>
+      <div class="trace-panel">
+        <div class="mono">TRACE · ask_portfolio</div>
+        <div class="trace-row"><span>├─ retrieve(case_studies)</span><span class="mono">[k] docs</span></div>
+        <div class="trace-row"><span>├─ rerank()</span><span class="mono">top [n]</span></div>
+        <div class="trace-row"><span>├─ generate()</span><span class="mono">[latency]</span></div>
+        <div class="trace-row"><span>└─ judge.faithfulness()</span><span class="signal">[score]</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact" class="wrap site-footer">
+  <h2>Building something with AI that has to <em>actually work</em>? Let's talk.</h2>
+  <div class="ctas">
+    <a href="mailto:[your-email]" class="btn btn-primary">[your email]</a>
+    <a href="https://www.linkedin.com/in/[handle]" class="btn">LinkedIn</a>
+    <a href="https://github.com/[username]" class="btn">GitHub</a>
+  </div>
+  <div class="copyright">© 2026 Parth Patel · parthpatel.si</div>
+</footer>
+
+</body>
+</html>
